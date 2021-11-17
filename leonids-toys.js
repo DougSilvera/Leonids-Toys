@@ -29,3 +29,8 @@ console.log(woodenHorse.price)
 for( const toy of toys) {
   console.log(`price is $${toy.price}`)
 }
+
+for (toy of toys){
+  console.log(toy.Name
+    )
+}
