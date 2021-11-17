@@ -18,9 +18,28 @@ const teddyBear = {
   weight: 1.2,
 };
 
+const modelKit = {
+  id: 3,
+  Name: "Ford Tri Motor airplane",
+  InStock: true,
+  price: 9.99,
+  quantity: 12,
+  sold: 12,
+  weight: 2.4
+}
+
+const remoteControlTruck ={
+  id: 4,
+  Name: "Traxxas Rustler",
+  InStock: true,
+  price: 249.99,
+  quantity: 10,
+  sold: 5,
+  weight: 10.2
+}
 toys =[];
 
-toys.push(woodenHorse , teddyBear)
+toys.push(woodenHorse , teddyBear, remoteControlTruck, modelKit)
 
 console.log(toys);
 
