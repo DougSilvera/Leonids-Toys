@@ -63,3 +63,10 @@ toy.price = (toy.price*.05)+toy.price
 for (toy of toys) {
   console.log(`The ${toy.Name} price is $${toy.price} and there are ${toy.quantity} in stock`)
 }
+
+const toyToFind = 2
+
+for (toy of toys) {
+  if (toy.id === toyToFind)
+  console.log(`The ${toy.Name} price is $${toy.price} and there are ${toy.quantity} in stock`)
+}
