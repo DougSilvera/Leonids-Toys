@@ -41,32 +41,59 @@ toys =[];
 
 toys.push(woodenHorse , teddyBear, remoteControlTruck, modelKit)
 
-console.log(toys);
+// console.log(toys);
 
-console.log(woodenHorse.price)
+// console.log(woodenHorse.price)
 
-for( const toy of toys) {
-  console.log(`price is $${toy.price}`)
+// for( const toy of toys) {
+//   console.log(`price is $${toy.price}`)
+// }
+
+// for (toy of toys){
+//   console.log(toy.Name
+//     )
+// }
+
+
+
+// const toyToFind = 2
+
+// for (toy of toys) {
+//   if (toy.id === toyToFind)
+//   console.log(`The ${toy.Name} price is $${toy.price} and there are ${toy.quantity} in stock`)
+// }
+
+const addToyToInventory = (toyObject) => {
+  const lastIndex= toys.length - 1
+  const currentLastToy = toys[lastIndex]
+  const maxId = currentLastToy.id
+  const idForNewToy = maxId + 1
+  toyObject.id = idForNewToy
+  toys.push(toyObject)
 }
 
-for (toy of toys){
-  console.log(toy.Name
-    )
+const kite = {
+  Name: "Unicorn Kite",
+  InStock: true,
+  price: 10.99,
+  quantity: 15,
+  sold: 0,
+  weight: 2 
 }
+
+addToyToInventory(kite)
+
 
 for (const toy of toys) {
-toy.price = (toy.price*.05)+toy.price  
+  toy.price = (toy.price*.05)+toy.price  
+  
+  }
+  
 
-}
+console.log(toys)
 
 
-for (toy of toys) {
-  console.log(`The ${toy.Name} price is $${toy.price} and there are ${toy.quantity} in stock`)
-}
-
-const toyToFind = 2
 
 for (toy of toys) {
-  if (toy.id === toyToFind)
   console.log(`The ${toy.Name} price is $${toy.price} and there are ${toy.quantity} in stock`)
 }
