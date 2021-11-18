@@ -39,7 +39,7 @@ const remoteControlTruck ={
 }
 toys =[];
 
-toys.push(woodenHorse , teddyBear, remoteControlTruck, modelKit)
+toys.push(woodenHorse , teddyBear,modelKit, remoteControlTruck,)
 
 // console.log(toys);
 
@@ -86,7 +86,6 @@ addToyToInventory(kite)
 
 for (const toy of toys) {
   toy.price = (toy.price*.05)+toy.price  
-  
   }
   
 
@@ -94,6 +93,6 @@ console.log(toys)
 
 
 
-for (toy of toys) {
-  console.log(`The ${toy.Name} price is $${toy.price} and there are ${toy.quantity} in stock`)
-}
+// for (toy of toys) {
+//   console.log(`The ${toy.Name} price is $${toy.price} and there are ${toy.quantity} in stock`)
+// }
