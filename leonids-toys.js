@@ -89,10 +89,10 @@ for (const toy of toys) {
   }
   
 
-console.log(toys)
+// console.log(toys)
 
 
 
-// for (toy of toys) {
-//   console.log(`The ${toy.Name} price is $${toy.price} and there are ${toy.quantity} in stock`)
-// }
+for (toy of toys) {
+  console.log(`The ${toy.Name} price is $${toy.price} and there are ${toy.quantity} in stock`)
+}
