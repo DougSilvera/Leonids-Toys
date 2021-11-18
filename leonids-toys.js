@@ -53,3 +53,7 @@ for (toy of toys){
   console.log(toy.Name
     )
 }
+
+for (toy of toys) {
+  console.log(`The ${toy.Name} price is $${toy.price} and there are ${toy.quantity} in stock`)
+}
